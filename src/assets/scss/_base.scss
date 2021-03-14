@@ -4,6 +4,7 @@ $font-primary: "Open Sans", sans-serif;
 
 $font-size-title: 28px;
 $font-size-title--sub: 20px;
+$font-size-label: 12px;
 $font-size-text: 16px;
 
 // BORDER RADIUS
@@ -12,6 +13,7 @@ $border-radius-default: 10px;
 // COLORS
 $color-primary: rgb(0, 143, 7);
 $color-white: #fff;
+$color-light-shade: rgba(0, 0, 0, 0.103);
 $color-black: #000;
 
 // COLOR TEXT
@@ -19,12 +21,22 @@ $color-text-title: rgba(55, 56, 55, 0.993);
 $color-text-paragraph: rgb(102, 102, 102);
 
 // UI ELEMENTS
+
 .global {
   &__section-title {
     color: $color-primary;
     font-size: $font-size-text;
     font-weight: normal;
     text-transform: uppercase;
+  }
+
+  &__title {
+    font-size: $font-size-title--sub;
+    font-weight: bold;
+  }
+
+  &__paragraph {
+    font-size: $font-size-text;
   }
 }
 
