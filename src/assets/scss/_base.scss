@@ -21,7 +21,6 @@ $color-text-title: rgba(55, 56, 55, 0.993);
 $color-text-paragraph: rgb(102, 102, 102);
 
 // UI ELEMENTS
-
 .global {
   &__section-title {
     color: $color-primary;
@@ -58,6 +57,8 @@ $color-text-paragraph: rgb(102, 102, 102);
     color: $color-white;
   }
 }
+
+// HELPERS
 
 // Keyframes
 
