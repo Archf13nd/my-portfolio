@@ -24,12 +24,17 @@ $color-text-paragraph: rgb(102, 102, 102);
 .global {
   &__section-title {
     color: $color-primary;
-    font-size: $font-size-text;
+    font-size: 12px;
     font-weight: normal;
+    letter-spacing: 2px;
     text-transform: uppercase;
   }
 
   &__title {
+    font-size: $font-size-title;
+    font-weight: bold;
+  }
+  &__title--sub {
     font-size: $font-size-title--sub;
     font-weight: bold;
   }

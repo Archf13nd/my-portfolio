@@ -12,7 +12,7 @@
         <a href="#services" class="header__nav-items__item-link">Services</a>
       </li>
       <li class="header__nav-items__item">
-        <a class="header__nav-items__item-link">Projects</a>
+        <a href="#projects" class="header__nav-items__item-link">Projects</a>
       </li>
       <li class="header__nav-items__item">
         <a class="header__nav-items__item-link">About</a>
@@ -30,7 +30,7 @@ export default {
   data() {
     return {};
   },
-  methods: {},
+  methods: {}
 };
 </script>
 

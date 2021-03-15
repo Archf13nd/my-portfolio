@@ -4,6 +4,7 @@
   <the-intro></the-intro>
   <the-services></the-services>
   <the-services-mid-section></the-services-mid-section>
+  <the-projects></the-projects>
   <the-about></the-about>
   <the-contact></the-contact>
 </template>
@@ -14,6 +15,7 @@ import TheHero from "./components/Hero.vue";
 import TheIntro from "./components/Intro.vue";
 import TheServices from "./components/Services.vue";
 import TheServicesMidSection from "./components/ServicesMidSection.vue";
+import theProjects from "./components/Projects.vue";
 import TheAbout from "./components/About.vue";
 import TheContact from "./components/Contact.vue";
 
@@ -25,18 +27,19 @@ export default {
     TheIntro,
     TheServices,
     TheServicesMidSection,
+    theProjects,
     TheAbout,
-    TheContact,
+    TheContact
   },
   data() {
     return {
       adjustNav: false,
-      heroRef: null,
+      heroRef: null
     };
   },
   methods: {},
   mounted() {
-    const adjustNav = (value) => {
+    const adjustNav = value => {
       this.adjustNav = value;
     };
     const element = this.heroRef;
@@ -46,10 +49,10 @@ export default {
       let options = {
         root: null,
         rootMargin: "0px",
-        threshold: 0.9,
+        threshold: 0.9
       };
 
-      observer = new IntersectionObserver((entry) => {
+      observer = new IntersectionObserver(entry => {
         if (!entry[0].isIntersecting) {
           adjustNav(true);
         } else {
@@ -59,7 +62,7 @@ export default {
       observer.observe(element);
     }
     createObserver();
-  },
+  }
 };
 </script>
 
@@ -88,6 +91,7 @@ export default {
 }
 .about {
   grid-column: 2 / 3;
+  min-height: 100vh;
 }
 .contact {
   grid-column: 2 / 3;
@@ -109,6 +113,30 @@ export default {
 
   to {
     top: 100;
+  }
+}
+
+@keyframes flip {
+  from {
+    transform: translate(-50%, -50%) rotateX(-80deg);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotateX(0);
+    opacity: 1;
+  }
+}
+@keyframes flip-reverse {
+  from {
+    transform: translate(-50%, -50%) rotateX(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotateX(-80deg);
+
+    opacity: 0;
   }
 }
 </style>
