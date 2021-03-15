@@ -2,8 +2,7 @@
   <div ref="hero" id="hero" class="hero">
     <h1 class="hero__title">Conclave Web Services</h1>
     <p class="hero__paragraph">
-      I develop websites of all kinds. Have a design? For a price I'll make it
-      sublime
+      I develop websites of all kinds. Have a design? For a price I'll make it sublime
     </p>
     <a class="button button--hero" href="#intro">I'm interested</a>
   </div>
@@ -13,11 +12,11 @@
 export default {
   name: "HelloWorld",
   props: {
-    msg: String,
+    msg: String
   },
   mounted() {
     this.$emit("heroRef", this.$refs.hero);
-  },
+  }
 };
 </script>
 
@@ -45,6 +44,6 @@ export default {
 }
 
 .button--hero {
-  margin: 0 auto;
+  margin: 3rem auto;
 }
 </style>
