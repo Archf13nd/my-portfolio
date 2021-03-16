@@ -4,13 +4,12 @@
       <h3 class="global__section-title">Contact</h3>
       <h1 class="global__title info__title">Get in touch</h1>
       <p class="global__paragraph info__paragraph">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, ullam perspiciatis itaque quaerat aliquid velit nulla. Quo provident iure tempora!
+        Send me a message with the form or say hi on one of my socials! If you have a project for me or want to talk tech don't hestitate to contact me :)
       </p>
       <h2 class="global__title--sub info__title--sub">Find me on social media!</h2>
       <div class="info__social-icons">
-        <div class="info__social-icon"></div>
-        <div class="info__social-icon"></div>
-        <div class="info__social-icon"></div>
+        <a href="https://github.com/Archf13nd" target="_blank" class="info__social-icon info__social-icon--github"></a>
+        <a href="https://www.linkedin.com/in/alastair-parkyns-8a683a201/" target="_blank" class="info__social-icon info__social-icon--linked-in"></a>
       </div>
     </div>
     <form class="contact__form">
@@ -74,6 +73,14 @@ input {
     width: 50px;
     height: 50px;
     background: #000;
+    cursor: pointer;
+
+    &--github {
+      background: center / cover no-repeat url("../assets/icons/GitHub.png");
+    }
+    &--linked-in {
+      background: center / cover no-repeat url("../assets/icons/LinkedIn.svg");
+    }
   }
 }
 </style>

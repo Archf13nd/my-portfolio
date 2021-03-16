@@ -8,16 +8,16 @@
           <img src="https://cdn.pixabay.com/photo/2013/10/09/02/27/lake-192990_960_720.jpg" alt="Small house over water" />
         </div>
         <div class="card__information">
-          <h2 class="global__title--sub card__title">One page site</h2>
+          <h2 class="global__title--sub card__title">One page</h2>
           <p class="global__paragraph card__paragraph">
-            With his service I can build you a single webpage. It can be a standalone site or another page for a preexisting site.
+            With this service I can build you a single webpage. It can be a standalone site or another page for a preexisting site.
           </p>
           <ul class="card__list">
             <li>Mobile Responsive</li>
             <li>Two free simple animations</li>
             <li>Takes one week</li>
           </ul>
-          <h3 class="card__price">Starting at <span>£49.99</span></h3>
+          <h3 class="card__price">Starting at <span>£99.99</span></h3>
           <a href="" class="button card__button">Details</a>
         </div>
       </div>
@@ -27,16 +27,16 @@
           <img src="https://cdn.pixabay.com/photo/2016/06/24/10/47/house-1477041_960_720.jpg" alt="Modern house" />
         </div>
         <div class="card__information">
-          <h2 class="global__title--sub card__title">Three page site</h2>
+          <h2 class="global__title--sub card__title">Three pages</h2>
           <p class="global__paragraph card__paragraph">
-            Our medium tier option gets you a multipage site with professional routing.
+            This service gets you three pages with routing. Perfect if you want a small site for your business.
           </p>
           <ul class="card__list">
             <li>Mobile Responsive</li>
             <li>6 free simple animations</li>
-            <li>Takes 4 weeks</li>
+            <li>Takes 3 weeks</li>
           </ul>
-          <h3 class="card__price">Starting at <span>£149.99</span></h3>
+          <h3 class="card__price">Starting at <span>£249.99</span></h3>
           <a href="" class="button card__button">Details</a>
         </div>
       </div>
@@ -46,16 +46,16 @@
           <img src="https://cdn.pixabay.com/photo/2016/11/29/04/13/architecture-1867262_960_720.jpg" alt="Castle" />
         </div>
         <div class="card__information">
-          <h2 class="global__title--sub card__title">Ten page website</h2>
+          <h2 class="global__title--sub card__title">Ten pages</h2>
           <p class="global__paragraph card__paragraph">
-            The complete package.
+            If you need a large website this is the service for you. Using advanced techniques the site will remain fast.
           </p>
           <ul class="card__list">
-            <li>Lorem, ipsum dolor.</li>
-            <li>Lorem ipsum dolor sit.</li>
+            <li>Mobile Responsive</li>
+            <li>25 free simple animations</li>
             <li>Takes at least 3 months</li>
           </ul>
-          <h3 class="card__price">Starting at <span>£299.99+</span></h3>
+          <h3 class="card__price">Starting at <span>£749.99</span></h3>
           <a href="" class="button card__button">Details</a>
         </div>
       </div>

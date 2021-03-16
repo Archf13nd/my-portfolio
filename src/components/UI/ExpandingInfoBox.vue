@@ -1,6 +1,6 @@
 <template>
   <div class="info-points">
-    <h2 class="global__title info-points__title">Be visible on the internet</h2>
+    <h2 class="global__title info-points__title">What my services include:</h2>
     <div class="info-points__points">
       <div class="info-points__point">
         <h2
@@ -13,12 +13,13 @@
         </h2>
         <div class="info-points__text">
           <h2 class="global__title--sub info-points__title-sub" id="1" @click="showParagraph">
-            Lorem ipsum dolor sit amet
+            Mobile Responsiveness
           </h2>
           <transition :css="false" @enter="enter" @leave="leave" @enter-cancelled="enterCancelled" @leave-cancelled="leaveCancelled">
             <div class="info-points__paragraph" v-if="activeParagraph === '1'">
               <p class="global__paragraph info-points__paragraph-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod consequuntur delectus, voluptate corporis temporibus cum.
+                In today's world it's more important than ever to make the web accessible to mobile users. Because of this I make every site I build mobile
+                responsive.
               </p>
             </div>
           </transition>
@@ -35,13 +36,13 @@
         </h2>
         <div class="info-points__text">
           <h2 class="global__title--sub info-points__title-sub" id="2" @click="showParagraph">
-            Lorem ipsum dolor sit amet
+            Speed
           </h2>
           <transition :css="false" @enter="enter" @leave="leave" @enter-cancelled="enterCancelled" @leave-cancelled="leaveCancelled">
             <div class="info-points__paragraph" v-if="activeParagraph === '2'">
               <p class="global__paragraph info-points__paragraph-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod consequuntur delectus, voluptate corporis temporibus cum. Corporis fuga placeat
-                libero iste tempore.
+                Your users are likely to click off your site if it's too slow. I always consider performance and employ a selection of advanced techniques to
+                give your site the speed it needs.
               </p>
             </div>
           </transition>
@@ -58,13 +59,13 @@
         </h2>
         <div class="info-points__text">
           <h2 class="global__title--sub info-points__title-sub" id="3" @click="showParagraph">
-            Lorem ipsum dolor sit amet
+            SEO - Discoverable
           </h2>
           <transition :css="false" @enter="enter" @leave="leave" @enter-cancelled="enterCancelled" @leave-cancelled="leaveCancelled">
             <div class="global__paragraph info-points__paragraph" v-if="activeParagraph === '3'">
               <p class="global__paragraph info-points__paragraph-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod consequuntur delectus, voluptate corporis temporibus cum. Corporis fuga placeat
-                libero iste tempore.
+                You may have heard SEO being thrown around. It's an important aspect of a website and one I don't skip. By using a selection of techniques I
+                will give your site the best chance it can get at reaching the top of the search results
               </p>
             </div>
           </transition>

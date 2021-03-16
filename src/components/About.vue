@@ -5,14 +5,15 @@
     </div>
     <div class="about__info">
       <h3 class="global__section-title">About</h3>
-      <h1 class="global__title info__title">I'm passionate about great websites</h1>
+      <h1 class="global__title info__title">Hey, I'm Alastair</h1>
       <p class="global__paragraph info__paragraph">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias maiores, voluptates porro minima dolorum in Lorem ipsum dolor sit amet.
+        I've always loved technology and working out how things work. For the last few years my focus has been on the web and I never fail to find something new
+        or cool to try out or mess with.
       </p>
-      <ul class="info__list">
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing</li>
-      </ul>
+      <p class="global__paragraph info__paragraph">
+        The internet is growing faster than ever and new technologies solving many many different problems or introducing many new and exciting features are
+        appearing week after week. I have a passion to learn and a drive to build and I'm always exicted to see what I can create next.
+      </p>
     </div>
   </div>
 </template>
@@ -34,21 +35,6 @@
 
   &__info {
     padding: 4rem;
-  }
-}
-
-.info {
-  &__title {
-  }
-  &__paragraph {
-  }
-  &__list {
-    list-style-type: disc;
-    list-style-position: inside;
-
-    & > li {
-      margin-top: 1rem;
-    }
   }
 }
 </style>

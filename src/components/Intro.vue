@@ -7,8 +7,8 @@
           Are you looking for a custom website that doesn't look like the rest? Look no futher!
         </h1>
         <p class="global__paragraph intro__paragraph">
-          I offer you my web tech skills so together we can build your dream website. Perhaps you got a design you want to see come to life? Or perhaps you have
-          an idea or theme you want actualized and made to be? I'm the guy for you.
+          I offer you my web tech skills so together we can build your dream website. Perhaps you have got a design you want to see come to life? Or perhaps you
+          have an idea or theme you want actualized and made to be? If this is true then I'm the guy for you.
         </p>
         <p class="global__paragraph intro__paragraph">
           I take website building seriously. I say no to popular site builders like Wix and instead focus on a purer approach. I like optimization and creative
@@ -40,7 +40,7 @@
         <div class="intro__production-story__icon intro__production-story__icon--3"></div>
         <h2 class="global__title--sub intro__production-story__title">Revise</h2>
         <p class="intro__production-story__paragraph">
-          We'll establish how often you want me to check in with you. It can be as little or often as like. I'll show you the work so far and you can click
+          We'll establish how often you want me to check in with you. It can be as little or often as you like. I'll show you the work so far and you can click
           around and see if everything is how you imagined. If there are any small tweaks or changes let me know.
         </p>
       </div>
