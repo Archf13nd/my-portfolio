@@ -3,9 +3,9 @@
     <div class="intro__welcome">
       <div class="intro__introduction">
         <h3 class="global__section-title">Intro</h3>
-        <div class="global__title intro__title">
+        <h1 class="global__title intro__title">
           Are you looking for a custom website that doesn't look like the rest? Look no futher!
-        </div>
+        </h1>
         <p class="global__paragraph intro__paragraph">
           I offer you my web tech skills so together we can build your dream website. Perhaps you got a design you want to see come to life? Or perhaps you have
           an idea or theme you want actualized and made to be? I'm the guy for you.
@@ -22,27 +22,26 @@
 
     <div class="intro__production-stories">
       <div class="intro__production-story">
-        <div class="intro__production-story__icon"></div>
-        <h2 class="global__title--sub intro__production-story__title">Lorem ipsum dolor sit.</h2>
+        <div class="intro__production-story__icon intro__production-story__icon--1"></div>
+        <h2 class="global__title--sub intro__production-story__title">Plan</h2>
         <p class="intro__production-story__paragraph">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae exercitationem esse dolores accusantium vitae. Delectus architecto voluptate neque
-          nobis optio ut officia explicabo perspiciatis in.
+          Share with me your design or idea and we'll have a friendly chat about it. We'll establish what you would like for me to do for you and I'll ask a
+          bunch of questions to make sure we are on the same page.
         </p>
       </div>
       <div class="intro__production-story">
-        <div class="intro__production-story__icon"></div>
-        <h2 class="global__title--sub intro__production-story__title">Lorem ipsum dolor sit.</h2>
+        <div class="intro__production-story__icon intro__production-story__icon--2"></div>
+        <h2 class="global__title--sub intro__production-story__title">Build</h2>
         <p class="intro__production-story__paragraph">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae exercitationem esse dolores accusantium vitae. Delectus architecto voluptate neque
-          nobis optio ut officia explicabo perspiciatis in.
+          Without further to do I'll get building! I know what I'm doing and I'll be meticulously making sure everything is how you want it to be.
         </p>
       </div>
       <div class="intro__production-story">
-        <div class="intro__production-story__icon"></div>
-        <h2 class="global__title--sub intro__production-story__title">Lorem ipsum dolor sit.</h2>
+        <div class="intro__production-story__icon intro__production-story__icon--3"></div>
+        <h2 class="global__title--sub intro__production-story__title">Revise</h2>
         <p class="intro__production-story__paragraph">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae exercitationem esse dolores accusantium vitae. Delectus architecto voluptate neque
-          nobis optio ut officia explicabo perspiciatis in.
+          We'll establish how often you want me to check in with you. It can be as little or often as like. I'll show you the work so far and you can click
+          around and see if everything is how you imagined. If there are any small tweaks or changes let me know.
         </p>
       </div>
     </div>
@@ -101,10 +100,22 @@
     }
 
     &__icon {
+      position: relative;
+      left: -2rem;
       width: 12rem;
       height: 12rem;
-      background: #000;
+      clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
       margin-bottom: 1rem;
+
+      &--1 {
+        background: no-repeat center / 60% content-box url("https://cdn.pixabay.com/photo/2016/10/02/19/50/brain-1710293_960_720.png");
+      }
+      &--2 {
+        background: no-repeat center / 60% content-box url("https://cdn.pixabay.com/photo/2014/04/02/16/26/compass-307291_960_720.png");
+      }
+      &--3 {
+        background: no-repeat center / 60% content-box url("https://cdn.pixabay.com/photo/2013/03/30/00/10/comments-97860_960_720.png");
+      }
     }
 
     &__title {
