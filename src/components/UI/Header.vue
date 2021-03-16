@@ -15,10 +15,10 @@
         <a href="#projects" class="header__nav-items__item-link">Projects</a>
       </li>
       <li class="header__nav-items__item">
-        <a class="header__nav-items__item-link">About</a>
+        <a href="#about" class="header__nav-items__item-link">About</a>
       </li>
       <li class="header__nav-items__item">
-        <a class="header__nav-items__item-link">Contact</a>
+        <a href="#contact" class="header__nav-items__item-link">Contact</a>
       </li>
     </ul>
   </header>

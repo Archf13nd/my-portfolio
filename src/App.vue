@@ -7,6 +7,7 @@
   <the-projects></the-projects>
   <the-about></the-about>
   <the-contact></the-contact>
+  <the-footer></the-footer>
 </template>
 
 <script>
@@ -18,6 +19,7 @@ import TheServicesMidSection from "./components/ServicesMidSection.vue";
 import theProjects from "./components/Projects.vue";
 import TheAbout from "./components/About.vue";
 import TheContact from "./components/Contact.vue";
+import TheFooter from "./components/UI/Footer.vue";
 
 export default {
   name: "App",
@@ -29,7 +31,8 @@ export default {
     TheServicesMidSection,
     theProjects,
     TheAbout,
-    TheContact
+    TheContact,
+    TheFooter
   },
   data() {
     return {
@@ -91,10 +94,14 @@ export default {
 }
 .about {
   grid-column: 2 / 3;
-  min-height: 100vh;
+  // min-height: 100vh;
 }
 .contact {
   grid-column: 2 / 3;
+}
+
+.footer {
+  grid-column: 1 / 4;
 }
 
 *,

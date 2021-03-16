@@ -1,31 +1,24 @@
 <template>
   <div class="info-points">
-    <h2 class="info-points__title">Be visible on the internet</h2>
+    <h2 class="global__title info-points__title">Be visible on the internet</h2>
     <div class="info-points__points">
       <div class="info-points__point">
         <h2
           class="info-points__number"
           :class="{
-            'info-points__number--active': activeParagraph === '1',
+            'info-points__number--active': activeParagraph === '1'
           }"
         >
           1
         </h2>
         <div class="info-points__text">
-          <h2 class="info-points__title-sub" id="1" @click="showParagraph">
+          <h2 class="global__title--sub info-points__title-sub" id="1" @click="showParagraph">
             Lorem ipsum dolor sit amet
           </h2>
-          <transition
-            :css="false"
-            @enter="enter"
-            @leave="leave"
-            @enter-cancelled="enterCancelled"
-            @leave-cancelled="leaveCancelled"
-          >
+          <transition :css="false" @enter="enter" @leave="leave" @enter-cancelled="enterCancelled" @leave-cancelled="leaveCancelled">
             <div class="info-points__paragraph" v-if="activeParagraph === '1'">
-              <p class="info-points__paragraph-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
-                consequuntur delectus, voluptate corporis temporibus cum.
+              <p class="global__paragraph info-points__paragraph-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod consequuntur delectus, voluptate corporis temporibus cum.
               </p>
             </div>
           </transition>
@@ -35,27 +28,20 @@
         <h2
           class="info-points__number"
           :class="{
-            'info-points__number--active': activeParagraph === '2',
+            'info-points__number--active': activeParagraph === '2'
           }"
         >
           2
         </h2>
         <div class="info-points__text">
-          <h2 class="info-points__title-sub" id="2" @click="showParagraph">
+          <h2 class="global__title--sub info-points__title-sub" id="2" @click="showParagraph">
             Lorem ipsum dolor sit amet
           </h2>
-          <transition
-            :css="false"
-            @enter="enter"
-            @leave="leave"
-            @enter-cancelled="enterCancelled"
-            @leave-cancelled="leaveCancelled"
-          >
+          <transition :css="false" @enter="enter" @leave="leave" @enter-cancelled="enterCancelled" @leave-cancelled="leaveCancelled">
             <div class="info-points__paragraph" v-if="activeParagraph === '2'">
-              <p class="info-points__paragraph-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
-                consequuntur delectus, voluptate corporis temporibus cum.
-                Corporis fuga placeat libero iste tempore.
+              <p class="global__paragraph info-points__paragraph-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod consequuntur delectus, voluptate corporis temporibus cum. Corporis fuga placeat
+                libero iste tempore.
               </p>
             </div>
           </transition>
@@ -65,27 +51,20 @@
         <h2
           class="info-points__number"
           :class="{
-            'info-points__number--active': activeParagraph === '3',
+            'info-points__number--active': activeParagraph === '3'
           }"
         >
           3
         </h2>
         <div class="info-points__text">
-          <h2 class="info-points__title-sub" id="3" @click="showParagraph">
+          <h2 class="global__title--sub info-points__title-sub" id="3" @click="showParagraph">
             Lorem ipsum dolor sit amet
           </h2>
-          <transition
-            :css="false"
-            @enter="enter"
-            @leave="leave"
-            @enter-cancelled="enterCancelled"
-            @leave-cancelled="leaveCancelled"
-          >
-            <div class="info-points__paragraph" v-if="activeParagraph === '3'">
-              <p class="info-points__paragraph-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
-                consequuntur delectus, voluptate corporis temporibus cum.
-                Corporis fuga placeat libero iste tempore.
+          <transition :css="false" @enter="enter" @leave="leave" @enter-cancelled="enterCancelled" @leave-cancelled="leaveCancelled">
+            <div class="global__paragraph info-points__paragraph" v-if="activeParagraph === '3'">
+              <p class="global__paragraph info-points__paragraph-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod consequuntur delectus, voluptate corporis temporibus cum. Corporis fuga placeat
+                libero iste tempore.
               </p>
             </div>
           </transition>
@@ -100,7 +79,7 @@ export default {
   data() {
     return {
       currentParagraph: "1",
-      preventClick: false,
+      preventClick: false
     };
   },
   methods: {
@@ -112,15 +91,13 @@ export default {
       e.style.height = 0;
 
       let startTime;
-      const animate = (time) => {
+      const animate = time => {
         if (!startTime) {
           startTime = time;
         }
         const elapsed = time - startTime;
 
-        const heightVal = Math.min(
-          (maxHeight / 100) * Math.min(0.3 * elapsed, 100)
-        );
+        const heightVal = Math.min((maxHeight / 100) * Math.min(0.3 * elapsed, 100));
         e.style.height = heightVal + "px";
         if (heightVal >= maxHeight) {
           this.preventClick = false;
@@ -139,15 +116,13 @@ export default {
       // const maxHeight = 100;
 
       let startTime;
-      const animate = (time) => {
+      const animate = time => {
         if (!startTime) {
           startTime = time;
         }
         const elapsed = time - startTime;
 
-        const heightVal = Math.min(
-          maxHeight - (maxHeight / 100) * Math.max(0.3 * elapsed, 0)
-        );
+        const heightVal = Math.min(maxHeight - (maxHeight / 100) * Math.max(0.3 * elapsed, 0));
         e.style.height = heightVal + "px";
         if (heightVal <= 0) {
           this.preventClick = false;
@@ -170,13 +145,13 @@ export default {
         return;
       }
       this.currentParagraph = e.target.id;
-    },
+    }
   },
   computed: {
     activeParagraph() {
       return this.currentParagraph;
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -205,12 +180,10 @@ export default {
   }
 
   &__title-sub {
-    font-size: $font-size-title--sub;
     font-weight: bold;
     transition: all 0.1s ease-in;
     display: flex;
     align-items: center;
-    margin-bottom: 1.5rem;
     cursor: pointer;
 
     &:hover {
@@ -223,6 +196,8 @@ export default {
   }
 
   &__number {
+    position: relative;
+    top: -6px;
     flex: 0 0 5rem;
     display: flex;
     height: 5rem;
@@ -230,7 +205,7 @@ export default {
     align-items: center;
     border: 3px solid $color-primary;
     border-radius: 50%;
-    margin-right: 1rem;
+    margin-right: 2rem;
     transition: all 0.1s ease-in;
     font-size: $font-size-title--sub;
 

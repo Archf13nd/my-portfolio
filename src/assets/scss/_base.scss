@@ -13,6 +13,7 @@ $border-radius-default: 10px;
 // COLORS
 $color-primary: rgb(0, 143, 7);
 $color-white: #fff;
+$color-white-darken: rgba(206, 205, 205, 0.986);
 $color-light-shade: rgba(0, 0, 0, 0.103);
 $color-black: #000;
 
@@ -28,19 +29,24 @@ $color-text-paragraph: rgb(102, 102, 102);
     font-weight: normal;
     letter-spacing: 2px;
     text-transform: uppercase;
+
+    margin-bottom: 1rem;
   }
 
   &__title {
     font-size: $font-size-title;
     font-weight: bold;
+    margin-bottom: 3rem;
   }
   &__title--sub {
     font-size: $font-size-title--sub;
     font-weight: bold;
+    margin-bottom: 2rem;
   }
 
   &__paragraph {
     font-size: $font-size-text;
+    margin-bottom: 2rem;
   }
 }
 

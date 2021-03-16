@@ -1,20 +1,16 @@
 <template>
   <div class="services" id="services">
     <h3 class="global__section-title">Services</h3>
-    <h1 class="services__title">Choose the package that suits your needs</h1>
+    <h1 class="global__title services__title">Choose the package that suits your needs</h1>
     <div class="services__cards">
       <div class="card">
         <div class="card__img">
-          <img
-            src="https://cdn.pixabay.com/photo/2013/10/09/02/27/lake-192990_960_720.jpg"
-            alt="Small house over water"
-          />
+          <img src="https://cdn.pixabay.com/photo/2013/10/09/02/27/lake-192990_960_720.jpg" alt="Small house over water" />
         </div>
         <div class="card__information">
-          <h2 class="card__title">Lorem ipsum dolor sit amet.</h2>
-          <p class="card__paragraph">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi in
-            laborum non at quam provident? Sit perspiciatis eos vel natus.
+          <h2 class="global__title--sub card__title">Lorem ipsum dolor sit amet.</h2>
+          <p class="global__paragraph card__paragraph">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi in laborum non at quam provident? Sit perspiciatis eos vel natus.
           </p>
           <ul class="card__list">
             <li>Lorem, ipsum dolor.</li>
@@ -27,16 +23,12 @@
 
       <div class="card">
         <div class="card__img">
-          <img
-            src="https://cdn.pixabay.com/photo/2016/06/24/10/47/house-1477041_960_720.jpg"
-            alt="Modern house"
-          />
+          <img src="https://cdn.pixabay.com/photo/2016/06/24/10/47/house-1477041_960_720.jpg" alt="Modern house" />
         </div>
         <div class="card__information">
-          <h2 class="card__title">Lorem ipsum dolor sit amet.</h2>
-          <p class="card__paragraph">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi in
-            laborum non at quam provident? Sit perspiciatis eos vel natus.
+          <h2 class="global__title--sub card__title">Lorem ipsum dolor sit amet.</h2>
+          <p class="global__paragraph card__paragraph">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi in laborum non at quam provident? Sit perspiciatis eos vel natus.
           </p>
           <ul class="card__list">
             <li>Lorem, ipsum dolor.</li>
@@ -49,16 +41,12 @@
 
       <div class="card">
         <div class="card__img">
-          <img
-            src="https://cdn.pixabay.com/photo/2016/11/29/04/13/architecture-1867262_960_720.jpg"
-            alt="Castle"
-          />
+          <img src="https://cdn.pixabay.com/photo/2016/11/29/04/13/architecture-1867262_960_720.jpg" alt="Castle" />
         </div>
         <div class="card__information">
-          <h2 class="card__title">Lorem ipsum dolor sit amet.</h2>
-          <p class="card__paragraph">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi in
-            laborum non at quam provident? Sit perspiciatis eos vel natus.
+          <h2 class="global__title--sub card__title">Lorem ipsum dolor sit amet.</h2>
+          <p class="global__paragraph card__paragraph">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi in laborum non at quam provident? Sit perspiciatis eos vel natus.
           </p>
           <ul class="card__list">
             <li>Lorem, ipsum dolor.</li>
@@ -126,12 +114,11 @@
 
       &__title {
         font-size: $font-size-title--sub;
-        margin-bottom: 1.5rem;
+        // margin-bottom: 1.5rem;
       }
 
       &__paragraph {
         font-size: $font-size-text;
-        margin-bottom: 2rem;
       }
 
       &__list {

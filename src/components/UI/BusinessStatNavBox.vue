@@ -2,25 +2,13 @@
   <div class="navbox">
     <div class="navbox__header">
       <ul class="navbox__tabs">
-        <li
-          class="navbox__tab"
-          :class="{ 'navbox__tab--active': theActiveNav === 0 }"
-          @click="activeNav = 0"
-        >
+        <li class="navbox__tab" :class="{ 'navbox__tab--active': theActiveNav === 0 }" @click="activeNav = 0">
           ☻ Business
         </li>
-        <li
-          class="navbox__tab"
-          :class="{ 'navbox__tab--active': theActiveNav === 1 }"
-          @click="activeNav = 1"
-        >
+        <li class="navbox__tab" :class="{ 'navbox__tab--active': theActiveNav === 1 }" @click="activeNav = 1">
           ☻ Expertise
         </li>
-        <li
-          class="navbox__tab"
-          :class="{ 'navbox__tab--active': theActiveNav === 2 }"
-          @click="activeNav = 2"
-        >
+        <li class="navbox__tab" :class="{ 'navbox__tab--active': theActiveNav === 2 }" @click="activeNav = 2">
           ☻ Quality
         </li>
       </ul>
@@ -31,9 +19,8 @@
         <div class="global__title navbox__title">What I can offer you</div>
 
         <p class="global__paragraph navbox__paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem vitae cum
-          in molestiae magnam pariatur fuga iure perspiciatis obcaecati
-          excepturi, dolorum beatae? Amet, accusantium.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem vitae cum in molestiae magnam pariatur fuga iure perspiciatis obcaecati excepturi,
+          dolorum beatae? Amet, accusantium.
         </p>
 
         <div class="percentageBar">
@@ -110,17 +97,13 @@
 
       <div class="navbox__tabThree" v-else>
         <div class="info-box">
-          <p class="info-box__paragraph">
+          <p class="global__paragraph info-box__paragraph">
             <span class="info-box__paragraph--bold"> We strive to achieve</span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-            sed illo quis nemo distinctio assumenda sapiente labore earum fugit
-            error?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sed illo quis nemo distinctio assumenda sapiente labore earum fugit error?
           </p>
-          <p class="info-box__paragraph">
+          <p class="global__paragraph info-box__paragraph">
             <span class="info-box__paragraph--bold">Our goal is to help</span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-            sed illo quis nemo distinctio assumenda sapiente labore earum fugit
-            error?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sed illo quis nemo distinctio assumenda sapiente labore earum fugit error?
           </p>
 
           <ul class="info-box__list">
@@ -150,14 +133,14 @@
 export default {
   data() {
     return {
-      activeNav: 0,
+      activeNav: 0
     };
   },
   computed: {
     theActiveNav() {
       return this.activeNav;
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -176,14 +159,14 @@ a:active {
 
   &__item {
     flex: 0 0 50%;
-    padding: 3rem 1rem;
+    padding: 3rem 2rem;
     display: flex;
   }
 
   &__number {
     font-size: $font-size-title;
     color: $color-primary;
-    margin: 0 1rem;
+    margin-right: 1rem;
     height: fit-content;
     display: flex;
     align-items: flex-start;
@@ -199,8 +182,6 @@ a:active {
 
 .info-box {
   &__paragraph {
-    margin-bottom: 2rem;
-
     &--bold {
       font-weight: bold;
     }
@@ -210,6 +191,10 @@ a:active {
     list-style: disc;
     display: inline-block;
     list-style-position: inside;
+
+    > li {
+      margin-top: 1rem;
+    }
   }
 }
 
@@ -244,6 +229,7 @@ a:active {
   }
 
   &__title {
+    line-height: 100%;
   }
 
   &__paragraph {
