@@ -24,16 +24,19 @@
   height: 100%;
   margin-top: 13rem;
   display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
   align-items: center;
   font-size: $font-size-text;
   &__img {
-    flex: 0 0 60%;
+    flex: 0 1 680px;
     // width: 50%;
     height: auto;
     padding: 5rem;
   }
 
   &__info {
+    flex: 0 0 560px;
     padding: 4rem;
   }
 }

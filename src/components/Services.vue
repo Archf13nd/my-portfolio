@@ -72,25 +72,29 @@
 
   &__title {
     font-size: $font-size-title;
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
   }
 
   &__cards {
     display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    // justify-content: space-between;
     padding: 0 2rem;
 
     & .card {
-      // width: 33%;
+      flex: 0 0 380px;
       display: flex;
       flex-direction: column;
       align-items: center;
       border: 1px solid rgba(0, 0, 0, 0.089);
       border-radius: $border-radius-default;
+      margin: 3rem 1.5rem;
 
       &:nth-child(2) {
-        margin: 0 6rem;
+        // margin: 0 6rem;
       }
 
       &__img {
@@ -103,7 +107,7 @@
         border-radius: $border-radius-default $border-radius-default 0 0;
 
         & > img {
-          width: 150%;
+          width: 100%;
           height: auto;
         }
       }

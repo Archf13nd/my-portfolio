@@ -23,7 +23,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 .hero {
-  width: 100vw;
   height: 85vh;
   background: #000;
   display: flex;

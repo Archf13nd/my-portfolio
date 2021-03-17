@@ -55,15 +55,17 @@
 
   &__welcome {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 13rem 0;
-    max-height: 70rem;
   }
 
   &__introduction {
-    flex: 0 0 41.66%;
-    padding: 4rem 6rem 0 0;
+    flex: 1 0 500px;
+    // padding: 4rem 6rem 0 0;
+    margin: 5rem;
+    // max-width: 50%;
   }
 
   &__title {
@@ -76,9 +78,9 @@
   }
 
   &__img {
-    flex: 0 0 58.33%;
-    max-width: 50%;
+    flex: 0 1 600px;
     height: auto;
+    margin: 0 auto;
 
     & > img {
       width: 100%;
@@ -89,11 +91,13 @@
 
   &__production-stories {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 0 2rem;
   }
 
   &__production-story {
-    width: 33.33%;
+    flex: 0 0 360px;
 
     &:nth-child(2) {
       margin: 0 6rem;

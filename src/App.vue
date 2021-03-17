@@ -71,8 +71,10 @@ export default {
 
 <style lang="scss">
 #app {
+  margin: 0;
+  padding: 0;
   display: grid;
-  grid: min-content / calc(33.33vw / 2) 66.66vw calc(33.33vw / 2);
+  grid: min-content / minmax(0, 1fr) minmax(auto, 1267px) minmax(0, 1fr);
 }
 
 .hero {

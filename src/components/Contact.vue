@@ -25,16 +25,25 @@
 .contact {
   margin-top: 13rem;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
 
   &__info {
-    flex: 0 0 50%;
+    flex: 0 0 min-content;
     padding: 2rem;
+    max-width: 50%;
+    min-width: 600px;
   }
 
   &__form {
+    flex: 0 0 min-content;
+
     padding: 5rem;
     width: 100%;
+    max-width: 50%;
+    min-width: 600px;
+
     display: flex;
     flex-direction: column;
   }
