@@ -30,7 +30,7 @@ export default {
   margin-top: 13rem;
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
   grid-template-rows: 1fr 1fr;
 
   &__img {
